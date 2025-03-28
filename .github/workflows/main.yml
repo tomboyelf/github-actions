@@ -5,13 +5,13 @@ name: CI
 on:
  workflow_dispatch:
 
- jobs:
-  build:
-   runs-on: ubuntu-latest
+jobs:
+ build:
+  runs-on: ubuntu-latest
 
-   steps:
-    - uses: actions/checkout@v3
-    - run: echo Hello world
+  steps:
+   - uses: actions/checkout@v3
+   - run: echo Hello world
 
-    - run: echo add another line
-    - run: echo one more 
+   - run: echo add another line
+   - run: echo one more 
