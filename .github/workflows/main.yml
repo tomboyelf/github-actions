@@ -11,7 +11,11 @@ jobs:
 
   steps:
    - uses: actions/checkout@v3
-   - run: echo Hello world
+   - run: echo "新しい行を追加しました" >> README.txt
 
    - run: echo add another line
    - run: echo one more 
+   - uses: peter-evans/create-pull-request@v5
+     with:
+      title: update(test)
+      branch: main
