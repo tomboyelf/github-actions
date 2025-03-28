@@ -19,3 +19,5 @@ jobs:
      with:
       title: update(test)
       branch: main
+      commit-message: "this is commit message"
+      body: "This pull request updates the README.txt with new lines."
