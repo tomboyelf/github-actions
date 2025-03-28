@@ -9,7 +9,7 @@ permissions:
 jobs:
  build:
   runs-on: ubuntu-latest
-
+  
   steps:
    - uses: actions/checkout@v3
    - run: echo "新しい行を追加しました" >> README.txt
@@ -18,5 +18,6 @@ jobs:
      with:
       title: update(test)
       branch: main
+      token: ${{ secrets.MY_PAT }}
       commit-message: "this is commit message"
       body: "This pull request updates the README.txt with new lines."
